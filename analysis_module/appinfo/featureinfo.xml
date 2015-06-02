@@ -1,0 +1,11 @@
+<!--this is a file contain the analysis result for EnvGather features-->
+<features> 
+    <feature>     
+        <name>MD5</name>  
+        <datatype>category</datatype> 
+        <type>static</type>   
+        <description>calculates and verifies 128-bit MD5 hashes, as described in RFC 1321</description> 
+        <avail>TRUE</avail> 
+        <enable_variable>ENABLE_MD5</enable_variable> 
+    </feature> 
+</features>

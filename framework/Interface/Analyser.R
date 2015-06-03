@@ -13,7 +13,7 @@ PAK.Analyser<-setRefClass(
       name<<-name
       app<<-app
       features<<-features
-      path<<-analysis_tools.path
+      path<<-path.analysis_tools
       enable.list<<-GetEnableList(paste0(path,"/",name,"/featureinfo.xml"),Nameaskey = TRUE)
       datatype.list<<-GetDatatypeList(paste0(path,"/",name,"/featureinfo.xml"))
     },
@@ -40,8 +40,7 @@ PAK.Analyser<-setRefClass(
       app.path<-dirname(app)
       #go applications directions
       envstr<-paste0(envstr,'cd ',app.path,';')
-      envstr<-paste0(envstr,'sh ',path,name,"/analysis.sh ",app.name)
-      
+      envstr<-paste0(envstr,'sh ',path,name,"/analysis.sh ","./",app.name)
       r<-system(envstr,intern = TRUE)
       resultfile<-paste0(app.path,"/",r)
       result<<-xmlToDataFrame(paste0(app.path,"/",r),stringsAsFactors=FALSE)

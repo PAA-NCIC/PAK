@@ -1,5 +1,4 @@
 library("methods")
-path.generatortools<-"/home/lyl/program/hpts/generator_module/"
 PAK.Generator<-setRefClass(
   "PAK.Generator",
   fields = list(app = "character",
@@ -14,7 +13,7 @@ PAK.Generator<-setRefClass(
       name<<-name
       app<<-app
       output<<-output
-      path<<-path.generatortools
+      path<<-path.generator_tools
       
       if(is.data.frame(p.os))
         setPUsingSpace(p.os)

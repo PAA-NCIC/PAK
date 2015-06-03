@@ -1,4 +1,3 @@
-
 PAK.Extractor<-setRefClass(
   "PAK.Extractor",
   fields = list(analysers = "list",

@@ -38,7 +38,7 @@ feature data type including numerical, category, boolen, combination(supporting 
         <datatype>numerical</datatype>
         <datatype>numerical</datatype>
       </datatype>
-    <feature>
+    </feature>
   </features> 
 ```
 

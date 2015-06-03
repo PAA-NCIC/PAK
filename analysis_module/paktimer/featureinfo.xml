@@ -1,0 +1,9 @@
+<features>
+    <feature>
+        <type>dynamic</type>
+        <name>time</name>
+        <description>the execution time of a given application</description>
+        <enable_variable>ENABLE_PAKTIME</enable_variable>
+        <datatype>numerical</datatype>
+    </feature>
+</features>

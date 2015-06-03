@@ -1,8 +1,10 @@
-path.analysis_tools<-"/home/lyl/program/hpts/analysis_module/"
-path.generator_tools<-"/home/lyl/program/hpts/generator_module/"
-datasource<-"hps"
-database.user<-"hps"
-database.pwd<-"hps"
+path.analysis_tools<-"/Users/luoyulong/Documents/Mac-program/PAK/analysis_module/"
+path.generator_tools<-"/Users/luoyulong/Documents/Mac-program/PAK/generator_module/"
+odbc.source<-"kdb"
+database.user<-"user"
+database.pwd<-"pwd"
+
+
 
 GetSourceFileDir<-function()
 {
@@ -26,16 +28,16 @@ SourceDir <- function(path, trace = FALSE)
   }
 }
 
-
 sfdir<-GetSourceFileDir()
 source(file.path(sfdir,"framework/dependencies.R"))
 SourceDir(file.path(sfdir,"framework/Interface"))
-SourceDir(file.path(sfdir,"framework/ExtractModule"))
+SourceDir(file.path(sfdir,"framework/ExtractorModule"))
 SourceDir(file.path(sfdir,"framework/ProducerModule"))
 SourceDir(file.path(sfdir,"framework/OptimizerModule"))
 SourceDir(file.path(sfdir,"framework/EvaluatorModule"))
 SourceDir(file.path(sfdir,"framework/LearnerModule"))
 SourceDir(file.path(sfdir,"framework/DBModule"))
+SourceDir(file.path(sfdir,"framework/Tuning"))
 SourceDir(file.path(sfdir,"framework/lib"))
 
 

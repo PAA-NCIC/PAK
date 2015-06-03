@@ -55,7 +55,7 @@ PAK.Tuner<-setRefClass(
         #search is end 
         if(length(parameters)==0)
           break
-        
+         
         optimized.instance<-optimizer$optimize(app,parameters)
         print(parameters)
         score<-evaluator$evaluate(optimized.instance)

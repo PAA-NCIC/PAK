@@ -1,0 +1,8 @@
+<variants>
+    <variant>
+        <name>compilerflag</name>
+        <description>the compiler flag</description>
+        <enable_variable>ENABLE_COMPILERFLAG</enable_variable>
+        <datatype>string</datatype>
+    </variant>
+</variants>

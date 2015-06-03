@@ -83,9 +83,6 @@ CreateTable<-function(format,dbname,tbname){
   return(TRUE)  
 }
 
-
-
-
 CheckAndUpdateMainTableCol<-function(subtable.names,dbname="hpts"){
   # check if the main table contains colmun that connects to subtable.
   # If not, alter the main table.
@@ -129,12 +126,6 @@ CheckAndUpdateTableStructure<-function(data.names,dbname="hpts",tbname="main"){
       result<-sqlQuery(conn,sprintf("alter table %s.%s add %s int(10);",dbname,tbname,not.in.names[i]))
     }
 }
-
-
-
-
-
-
 
 StoreAnalysis<-function(analysis.results,override=TRUE,
                         analysis_module.path=path.generator_tools)
@@ -234,7 +225,6 @@ StoreAnalysis<-function(analysis.results,override=TRUE,
 }
 
 
-
 StoreTransformation<-function(main.id, generator.results,analysis.results,override=TRUE,
                               generator_module.path=path.generator_tools,
                               analysis_module.path=path.analysis_tools)
@@ -309,22 +299,6 @@ StoreTransformation<-function(main.id, generator.results,analysis.results,overri
   
   return(generator.table.id)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 parseCombinedData<-function(name,data,datastr){
   name<-sub(" ","",name)
@@ -685,11 +659,7 @@ UpdateForDB<-function(condition,condition.format,
     stop("error ! you will update the whole table")
   cmd.str <- sprintf('update %s.%s set %s where TRUE and %s ;', dbname, tbname, update.str,condition.str)
   
-  
   conn <- OpenDB()
   result<-sqlQuery(conn, cmd.str)
   return (result)
 }
-
- 
-

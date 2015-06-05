@@ -1,5 +1,5 @@
-path.analysis_tools<-"/Users/luoyulong/Documents/Mac-program/PAK/analysis_module/"
-path.generator_tools<-"/Users/luoyulong/Documents/Mac-program/PAK/generator_module/"
+path.analysis_tools<-"/home/liujh/PAK-master/analysis_module/"
+path.generator_tools<-"/home/liujh/PAK-master/generator_module/"
 odbc.source<-"kdb"
 database.user<-"user"
 database.pwd<-"pwd"

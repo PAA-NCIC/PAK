@@ -7,13 +7,13 @@ GetSourceFileDir<-function()
 }
 
 sfdir<-GetSourceFileDir()
-source(file.path(sfdir,"../PAK.R"))
+source(file.path(sfdir,"../pak.R"))
 
 
 # Exhaustion algorithm autotuner
 if(TRUE || FALSE)
 {
-  app<-"/Users/luoyulong/Documents/Mac-program/PAK/applications/multiplyexample.c"
+  app<-"/home/liujh/PAK-master/applications/multiplyexample.c"
   
   parameter.list<-list()
   parameter.list["compilerflag"]<-'" -O0" ," -O1"," -O2"," -O3";'

@@ -1,4 +1,4 @@
-CXX=gcc-4.9
+CXX=gcc
 INCLUDES=-I.
 CXXFLAGS=$(INCLUDES)
 
